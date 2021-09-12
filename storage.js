@@ -29,6 +29,7 @@ const removeFromLocalStorage = () => {
     localStorage.removeItem( 'Student' );
 }
 const consoleLocalStorage = () => {
+    console.count( 'Function called: ' );
     const localStorageData = localStorage.getItem( 'Student' );
     const localStorageObject = JSON.parse( localStorageData );
     console.log( localStorageObject );
